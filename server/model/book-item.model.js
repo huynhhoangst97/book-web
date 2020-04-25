@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const bookItemSchema = new mongoose.Schema({
     name: String,
     author: String,
-    release: Number,
-    price: String
+    release: String,
+    price: String,
+    number: Number
 });
 
 const bookItem = mongoose.model('bookItem', bookItemSchema, 'book-items');
